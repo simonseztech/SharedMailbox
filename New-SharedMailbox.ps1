@@ -27,3 +27,4 @@ Add-RecipientPermission -Identity $Alias -AccessRights SendAs -Trustee $GivePerm
 Get-RecipientPermission -Identity $Alias
 set-MailboxRegionalConfiguration -Identity $Alias -Language fr-CA -LocalizeDefaultFolderName:$true
 Get-MailboxRegionalConfiguration -Identity $Alias
+Write-Host "Terminé"
